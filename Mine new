@@ -1,0 +1,19 @@
+DONATE_STRING = """ *🙋‍♂️Hello Bro or Sis mynam*!
+*👨‍💻Editing* :- *@mwcinema*
+*😔Donation Link Coming Soon😔*
+*😎Contect @starkindusttri*
+*👉Clcik 👉 /donate*
+"""
+@@ -152,10 +150,8 @@ def start(bot: Bot, update: Update, args: List[str]):
+                PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
+
+                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
+                    [[InlineKeyboardButton(text="👨‍💼 Master", url="t.me/starkindusttri"),  InlineKeyboardButton(text="Help 🤔", url="https://t.me/{}?start=help".format(bot.username))],
+                     [InlineKeyboardButton(text="🖥️ Tutorial Video🖥️", url="https://youtu.be/gHb4xCW-DhU")],
+                     [InlineKeyboardButton(text="👥 Any Doubt", url="t.me/starkindusttri), InlineKeyboardButton(text="MT Updates🤖", url="t.me/mwcinema")],
+                     [InlineKeyboardButton(text="🎬 YT Channel", url="-https://youtu.be/gHb4xCW-DhU"), InlineKeyboardButton(text="Repo ⛓️", url="https://telegra.ph/file/bf1a8b7cb18a95892a50c.jpg")],
+               [[InlineKeyboardButton(text="⭕️ Command Help ⭕️", url="https://t.me/{}?start=help".format(bot.username))],
+                     [InlineKeyboardButton(text="📢Updates", url="t.me/mwcinema1"), InlineKeyboardButton(text="❣️Video", url="https://telegra.ph/file/bf1a8b7cb18a95892a50c.jpg"), InlineKeyboardButton(text="🤠Credits", url="https://telegra.ph/file/bf1a8b7cb18a95892a50c.jpg")],
+                     [InlineKeyboardButton(text="➕ Add me to your group ➕", url="t.me/{}?startgroup=true".format(bot.username)) ]]))
+    else:
+        update.effective_message.reply_text("ചത്തിട്ടില്ലാ...")
